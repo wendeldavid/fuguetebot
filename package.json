@@ -1,0 +1,23 @@
+{
+  "name": "fuguetebot",
+  "version": "1.0.0",
+  "description": "Bot Rojão/Foguete/Fogos de artifício para Telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "node fuguetebot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendeldavid/fuguetebot.git"
+  },
+  "author": "Wendel Daid Przygoda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendeldavid/fuguetebot/issues"
+  },
+  "homepage": "https://github.com/wendeldavid/fuguetebot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.60.0",
+    "serverless": "^3.26.0"
+  }
+}
