@@ -38,12 +38,7 @@ const acende = async function(chatId) {
             joinShots = "";
         }
     
-        const waitForPromise = sendMessage(chatId, "...")
-        waitForPromise.then(async (resolve, reject) => {
-            console.log("aqui era pra ser o BOOOOMMM!!!!");
-        });
-
-
+        const waitForPromise = sendMessage(chatId, "...");
     });
 
     const lastBoom = Math.floor(Math.random() * 10);
@@ -61,8 +56,13 @@ const Fuguete = {
 
 exports.handler = (event) => {
     const body = JSON.parse(event.body);
+    console.log(event);
+    if (body.message.text && 
+        (body.message.text.startsWith('/acende') || 
+         body.message.text.startsWith('/gambeta'))) {
 
-    Fuguete.acende(body.message.chat.id);
+        Fuguete.acende(body.message.chat.id);
+    }
     const response = {
         statusCode: 200,
         body: JSON.stringify('BOOM'),
