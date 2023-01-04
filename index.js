@@ -37,15 +37,16 @@ const acende = async function(chatId) {
             }
             joinShots = "";
         }
-    
-        const waitForPromise = sendMessage(chatId, "...");
     });
+
+    const waitLastBoom = Math.floor(Math.random() *3) + 3;
+    await sleep(waitLastBoom * 1000);
 
     const lastBoom = Math.floor(Math.random() * 10);
     if (lastBoom !== 0) {
-        const waitLastBoom = Math.floor(Math.random() *3) + 3;
-        await sleep(waitLastBoom * 1000);
         const boomPromise = sendMessage(chatId, boom);
+    } else {
+        const boomPromise = sendMessage(chatId, "...");
     }
 }
 
