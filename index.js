@@ -19,7 +19,7 @@ const acende = async function(chatId) {
     const tsssPromise = sendMessage(chatId, "tsssss");
 
     const shots = "pra";
-    const boom = "POOOW!";
+    const boom = "POOOW! 🎇";
 
     tsssPromise.then(async (resolve, reject) => {
         var joinShots = "";
