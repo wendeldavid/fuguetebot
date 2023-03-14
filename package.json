@@ -4,7 +4,8 @@
   "description": "Bot Rojão/Foguete/Fogos de artifício para Telegram",
   "main": "index.js",
   "scripts": {
-    "test": "node fuguetebot.js"
+    "test": "node fuguetebot.js",
+    "postinstall": "node-prune"
   },
   "repository": {
     "type": "git",
