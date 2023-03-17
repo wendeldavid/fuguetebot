@@ -32,7 +32,7 @@ workflows:
   version: 2
   full:
     jobs:
-      - release:
-          filters:
-            branches:
-              only: master
+      - release
+          # filters:
+          #   branches:
+          #     only: master
