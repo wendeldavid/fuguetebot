@@ -10,6 +10,13 @@ jobs:
           pkg-manager: npm
       - run: node --version
       - run: npm --version
+      - run: npm run postinstall
+      - run:
+          name: pack
+          command: | 
+            zip -q -r fuguetebot.zip *
+            ls -hal
+
       # - run:
       #     name: Setup Environment Variables
       #     command: |
