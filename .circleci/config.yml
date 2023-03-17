@@ -1,14 +1,13 @@
-version: 2
+version: 2.1
 orbs:
   node: circleci/node@5.1.0
 jobs:
   release:
     executor: node/default
     steps:
-      - setup_remote_docker:
-          version: 20.10.14
       - checkout
-      - node/install
+      - node/install-packages:
+          pkg-manager: npm
       - run: node --version
       - run: npm --version
       # - run:
