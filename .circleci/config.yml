@@ -8,8 +8,7 @@ jobs:
       - setup_remote_docker:
           version: 20.10.14
       - checkout
-      - node/install:
-          node-version: '18.8.0'
+      - node/install
       - run: node --version
       - run: npm --version
       # - run:
