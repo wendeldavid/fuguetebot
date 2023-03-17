@@ -28,11 +28,11 @@ jobs:
       #     command: |
       #       cd functions
       #       ../.circleci/deploy.sh echo
-# workflows:
-#   version: 2
-#   full:
-#     jobs:
-#       - release:
-#           filters:
-#             branches:
-#               only: master
+workflows:
+  version: 2
+  full:
+    jobs:
+      - release:
+          filters:
+            branches:
+              only: master
