@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wendeldavid/fuguetebot#readme",
   "dependencies": {
+    "node-prune": "^1.0.2",
     "node-telegram-bot-api": "^0.60.0",
     "serverless": "^3.26.0"
   }
